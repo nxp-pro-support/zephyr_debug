@@ -1,0 +1,28 @@
+manifest:
+  defaults:
+    revision: main
+
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+
+  defaults:
+    remote: zephyrproject-rtos
+    revision: main
+
+  projects:
+
+    - name: zephyr
+      remote: zephyrproject-rtos
+      repo-path: zephyr
+      revision: main
+      import:
+        name-allowlist:
+          - mbedtls
+          - zcbor
+          - hal_nxp
+          - cmsis
+    
+      
+  self:
+    path: zephyr_debug
