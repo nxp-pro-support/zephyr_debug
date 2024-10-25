@@ -22,7 +22,7 @@ https://blog.golioth.io/improving-zephyr-project-structure-with-manifest-files/
 
 
 ```
-west init -m https://github.com/nxp-pro-support/zephyr-debug --mr main
+west init -m https://github.com/nxp-pro-support/zephyr_debug --mr main
 ```
 
 This initializes the folder as a west/zephyr workspace registered to our application repository.
