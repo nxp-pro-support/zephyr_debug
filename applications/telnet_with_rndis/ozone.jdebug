@@ -1,4 +1,13 @@
+/*********************************************************************
+*                 (c) SEGGER Microcontroller GmbH                    *
+*                      The Embedded Experts                          *
+*                         www.segger.com                             *
+**********************************************************************
 
+File          : C:/ELI/mcxn-iot/mcxn-iot/applications/telnet_with_rndis/ozone.jdebug
+Created       : 14 Nov 2024 11:15
+Ozone Version : V3.38
+*/
 
 /*********************************************************************
 *
@@ -13,13 +22,13 @@ void OnProjectLoad (void) {
   //
   // Dialog-generated settings
   //
-  Project.SetDevice ("MIMXRT1176xxxA_M7");
+  Project.AddPathSubstitute ("C:/ELI/mcxn-iot/mcxn-iot/applications/telnet_with_rndis", "$(ProjectDir)");
+  Project.AddPathSubstitute ("c:/eli/mcxn-iot/mcxn-iot/applications/telnet_with_rndis", "$(ProjectDir)");
+  Project.SetDevice ("MIMXRT1176xxx8_M7");
   Project.SetHostIF ("USB", "");
   Project.SetTargetIF ("SWD");
   Project.SetTIFSpeed ("4 MHz");
-  Project.AddSvdFile (".Config/CPU/Cortex-M7F.svd");
-  Project.SetOSPlugin("ZephyrPlugin");
-
+  Project.AddSvdFile ("$(InstallDir)/Config/CPU/Cortex-M7F.svd");
   //
   // User settings
   //

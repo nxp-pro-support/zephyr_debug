@@ -34,7 +34,7 @@ If you installed zephyr w/ the MCUXpresso installer, you need to activate the py
 
 
 ```
-west init -m https://github.com/nxp-pro-support/zephyr_debug --mr main
+west init -m https://github.com/nxp-pro-support/zephyr_debug --mr telnet_w_rndis
 ```
 
 This initializes the folder as a west/zephyr workspace registered to our application repository.

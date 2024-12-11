@@ -1,0 +1,1 @@
+west build -bmimxrt1170_evk@B/mimxrt1176/cm7 --pristine
