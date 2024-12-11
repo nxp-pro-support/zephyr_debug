@@ -22,8 +22,6 @@ void OnProjectLoad (void) {
   //
   // Dialog-generated settings
   //
-  Project.AddPathSubstitute ("C:/ELI/mcxn-iot/mcxn-iot/applications/telnet_with_rndis", "$(ProjectDir)");
-  Project.AddPathSubstitute ("c:/eli/mcxn-iot/mcxn-iot/applications/telnet_with_rndis", "$(ProjectDir)");
   Project.SetDevice ("MIMXRT1176xxx8_M7");
   Project.SetHostIF ("USB", "");
   Project.SetTargetIF ("SWD");
