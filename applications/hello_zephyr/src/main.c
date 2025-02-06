@@ -1,8 +1,3 @@
-/*
- * Copyright (c) 2012-2014 Wind River Systems, Inc.
- *
- * SPDX-License-Identifier: Apache-2.0
- */
 
 #include <zephyr/kernel.h>
 #include <zephyr/sys/printk.h>
@@ -68,14 +63,11 @@ static int i = 0;
 
 int main(void)
 {
-   k_sleep(K_MSEC(1000));
-
    printk("\r\n\r\nHello from %s\r\n\r\n",CONFIG_BOARD);
 
    while(1)
 	{  
 		k_sleep(K_MSEC(2000));
-
-      LOG_INF("We are up and running %d",i++);
+		LOG_INF("We are up and running %d",i++);
    }
 }

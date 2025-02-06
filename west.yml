@@ -5,6 +5,9 @@ manifest:
   remotes:
     - name: zephyrproject-rtos
       url-base: https://github.com/zephyrproject-rtos
+      
+    - name: nxp-pro-support
+      url-base: https://github.com/nxp-pro-support
 
   defaults:
     remote: zephyrproject-rtos
@@ -23,6 +26,11 @@ manifest:
           - hal_nxp
           - cmsis
     
-      
+    - name: zephyr-module-sample
+      remote: nxp-pro-support
+      repo-path: zephyr-module-sample
+      revision: main
+      path: ./modules/module-sample
+
   self:
     path: zephyr_debug
