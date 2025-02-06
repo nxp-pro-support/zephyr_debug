@@ -45,16 +45,17 @@ This initializes the folder as a west/zephyr workspace registered to our applica
 
 This may take several minutes to pull in all of the dependencies. In this step,  west will look at the manifest and pull down all the dependencies.   In this case, the dependecies are the vanilla Zephyr repository and our sample modules/library repository. It is quite large and can take several minutes but only has to be initialized once.  Future calls to west update are much quicker.
 
-![zephyr_start](https://github.com/nxp-pro-support/zephyr-start/assets/152433281/8df1b0aa-721d-4895-a4ae-12a2d6c6ff4d)
+
+![westupdate](https://github.com/user-attachments/assets/c9331b24-3dce-4138-9d28-41ca8a2436b9)
 
 
 ### 4)  west build/west flash
 
-Now you can build samples in the zephyr_debug folder the common way.  There is a hello_zephyr project in the *applications* folder.  The workspace will also have a copy of the zephyr source tree with the samples.
+Now you can build samples in the zephyr-debug folder the common way.  There is a hello_zephyr project in the *applications* folder.  The workspace will also have a copy of the zephyr source tree with the samples.
 
 i.e.  (for a pristine build)
 
-` west build -bmimxrt1170_evk@B/mimxrt1176/cm7 --pristine`
+`west build -bmimxrt1170_evk@B/mimxrt1176/cm7 --pristine`
 
 then
 
