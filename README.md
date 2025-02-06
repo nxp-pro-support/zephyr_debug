@@ -57,6 +57,8 @@ i.e.  (for a pristine build)
 
 `west build -bmimxrt1170_evk@B/mimxrt1176/cm7 --pristine`
 
+![build](https://github.com/user-attachments/assets/46f7fb14-193a-4344-8f67-51e600e58b2b)
+
 then
 
 `west flash`
