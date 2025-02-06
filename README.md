@@ -15,7 +15,7 @@ https://blog.golioth.io/improving-zephyr-project-structure-with-manifest-files/
 
 ## Setup
 
-### 0)  python .venv
+### 1)  python .venv
 
 If you installed zephyr w/ the MCUXpresso installer, you need to activate the python .venv before running commands from the termimal.
 
