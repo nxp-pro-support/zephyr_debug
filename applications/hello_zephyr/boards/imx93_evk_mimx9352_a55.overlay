@@ -1,0 +1,16 @@
+/ {
+  chosen {
+      /* sram node actually locates at DDR DRAM */
+    /*  zephyr,flash = &ocram;*/
+    /delete-property/ zephyr,flash;
+      zephyr,sram = &ocram;
+  };
+
+  ocram: memory@20480000
+   {
+      compatible = "zephyr,memory-region", "mmio-sram";
+
+      zephyr,memory-region = "OCRAM";
+      reg = <0x20480000 DT_SIZE_K(640)>;
+  };
+};
