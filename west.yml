@@ -4,7 +4,7 @@ manifest:
 
   remotes:
     - name: zephyrproject-rtos
-      url-base: https://github.com/zephyrproject-rtos
+      url-base: https://github.com/nxp-upstream
       
     - name: nxp-pro-support
       url-base: https://github.com/nxp-pro-support
@@ -18,7 +18,7 @@ manifest:
     - name: zephyr
       remote: zephyrproject-rtos
       repo-path: zephyr
-      revision: main
+      revision: ad31337f1939c48a32eb40575240c06a17994b1d
       import:
         name-allowlist:
           - mbedtls
