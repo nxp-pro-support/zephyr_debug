@@ -25,6 +25,8 @@ manifest:
           - zcbor
           - hal_nxp
           - cmsis
+          - cmsis_6
+          - open-amp
     
     - name: zephyr-module-sample
       remote: nxp-pro-support
