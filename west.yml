@@ -27,6 +27,7 @@ manifest:
           - cmsis
           - cmsis_6
           - open-amp
+          - libmetal
     
     - name: zephyr-module-sample
       remote: nxp-pro-support
